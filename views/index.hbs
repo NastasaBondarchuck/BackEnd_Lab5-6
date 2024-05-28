@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stolen Cars</title>
+</head>
+<body>
+<h1>Stolen Cars List</h1>
+
+
+<ul>
+    {{#each cars}}
+        <li><a href="/car/{{this._id}}">{{this.number}} - {{this.brand}}</a></li>
+    {{/each}}
+</ul>
+<div style="display: flex; gap: 24px;">
+    <a href="/add">Add car</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Details</title>
+</head>
+<body>
+    <h1>Car Details</h1>
+    <p>Number: {{car.number}}</p>
+    <p>Brand: {{car.brand}}</p>
+    <p>Status: {{car.status}}</p>
+    <p>Owner Last Name: {{car.owner_last_name}}</p>
+    <br><a href="/car/{{car._id}}/edit">Edit</a>
+    <br><a href="/car/{{car._id}}/delete">Delete</a>
+    <br><a href="/">Back to list</a>
+</body>
+</html>

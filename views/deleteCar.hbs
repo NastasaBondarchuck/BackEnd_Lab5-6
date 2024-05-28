@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Car</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Delete Car</h1>
+    <p>Are you sure you want to delete this car?</p>
+    <p>Number: {{car.number}}</p>
+    <p>Brand: {{car.brand}}</p>
+    <p>Status: {{car.status}}</p>
+    <p>Owner Last Name: {{car.owner_last_name}}</p>
+    <form action="/car/{{car._id}}/delete" method="POST">
+        <input type="submit" value="Delete Car">
+    </form>
+    <a href="/">Back to list</a>
+</body>
+</html>
